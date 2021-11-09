@@ -22,8 +22,8 @@ function dataEntry(){
 const products =[];
 var sum=0;
 dataEntry();
-for (i in products){
-    sum += products[i].totalPrice();
+for (let product of products){
+    sum += product.totalPrice();
 } 
 console.log(products);
 alert("The total value of all your products is: "+ sum);
